@@ -1,0 +1,19 @@
+.logo {
+  @extend %link;
+  // display: block;
+
+  font-family: $logo-font-family;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.167;
+  color: $primery-black-color;
+}
+
+.logo-blue {
+  color: $accent-color;
+}
+
+.logo-footer {
+  color: $primery-white-color;
+  margin-bottom: 8px;
+}

@@ -289,15 +289,13 @@ img {
   height: auto;
 }
 
-.navigation-list,
-.address-list, .features-list, .occupation-list, .team-list, .social-list, .customers-list, .footer-address-list {
+.navigation-list, .address-list, .features-list, .occupation-list, .team-list, .social-list, .customers-list, .footer-address-list {
   padding: 0;
   margin: 0;
   list-style: none;
 }
 
-.navigation-link,
-.address-link, .logo, .customers-link, .address-link-map, .address-link-mail,
+.logo, .navigation-link, .address-link, .customers-link, .address-link-map, .address-link-mail,
 .address-link-tel {
   text-decoration: none;
   display: block;
@@ -332,12 +330,17 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+  .container-nav {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 
 .backdrop {
@@ -576,33 +579,7 @@ img {
 }
 
 .header {
-  position: relative;
-  padding-top: 10px;
-  padding-bottom: 10px;
   border-bottom: 1px solid #ececec;
-}
-
-.menu-wrapper {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  padding: 60px 140px;
-  z-index: 100;
-  background: #ffffff;
-  -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
-          box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
-  -webkit-transform: scale(0);
-          transform: scale(0);
-  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.menu-wrapper.is-open {
-  -webkit-transform: scale(1);
-          transform: scale(1);
 }
 
 .menu-btn {
@@ -642,48 +619,163 @@ img {
   fill: currentColor;
 }
 
-.navigation {
-  padding-bottom: 60px;
+@media screen and (max-width: 767px) {
+  .header {
+    position: relative;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .menu-wrapper {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 60px 140px;
+    z-index: 100;
+    background: #ffffff;
+    -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .menu-wrapper.is-open {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
 }
 
-.navigation-list,
-.address-list {
+@media screen and (min-width: 768px) {
+  .menu-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  color: #000000;
+}
+
+.logo-blue {
+  color: #2196f3;
+}
+
+.logo-footer {
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+
+@media screen and (max-width: 1199px) {
+  .logo {
+    font-size: 24px;
+    line-height: 1.167;
+    color: #212121;
+  }
+}
+
+.navigation-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
-.navigation-item:not(:last-child) {
-  margin-bottom: 40px;
-}
-
-.navigation-link,
-.address-link {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 1.167;
+.navigation-link {
   letter-spacing: 0.02em;
   color: #212121;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.navigation-link:hover, .navigation-link:focus,
-.address-link:hover,
-.address-link:focus {
+.navigation-link:hover, .navigation-link:focus {
   color: #2196f3;
 }
 
-.address-item:not(:last-child) {
-  margin-bottom: 16px;
+.current {
+  color: #2196f3;
+}
+
+.line::after {
+  display: block;
+  content: '';
+  width: 100%;
+  height: 4px;
+  background: #2196f3;
+  border-radius: 2px;
+}
+
+@media screen and (max-width: 767px) {
+  .navigation {
+    padding-bottom: 60px;
+  }
+  .navigation-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .navigation-item:not(:last-child) {
+    margin-bottom: 40px;
+  }
+  .navigation-link {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.167;
+  }
+  .line::after {
+    margin-top: 8px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .navigation-list {
+    margin-left: 81px;
+  }
+  .navigation-item:not(:last-child) {
+    margin-right: 50px;
+  }
+  .navigation-link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-weight: 500;
+    line-height: 1.143;
+  }
+}
+
+.address-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.address-item {
+  height: 18px;
 }
 
 .address-link {
@@ -693,7 +785,12 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #757575;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: #212121;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -716,35 +813,61 @@ img {
   margin-right: 10px;
 }
 
-.current {
-  color: #2196f3;
+@media screen and (min-width: 1200px) {
+  .header-address {
+    margin-left: 305px;
+  }
+  .address-item:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
-.line::after {
-  display: block;
-  content: '';
-  margin-top: 8px;
-  width: 100%;
-  height: 4px;
-  background: #2196f3;
-  border-radius: 2px;
+@media screen and (max-width: 1199px) {
+  .header-address {
+    margin-left: 84px;
+  }
+  .address-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .address-item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  .address-link {
+    font-size: 12px;
+    line-height: 1.167;
+  }
+  .envelope {
+    width: 14px;
+    height: 14px;
+    margin-right: 8px;
+  }
+  .smartphone {
+    width: 13px;
+    height: 13px;
+    margin-right: 8px;
+  }
 }
 
-.logo {
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 1.167;
-  color: #000000;
-}
-
-.logo-blue {
-  color: #2196f3;
-}
-
-.logo-footer {
-  color: #ffffff;
-  margin-bottom: 8px;
+@media screen and (max-width: 767px) {
+  .header-address {
+    margin-left: 0;
+  }
+  .address-list {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .address-item:not(:last-child) {
+    margin-bottom: 16px;
+  }
+  .address-link {
+    font-size: 18px;
+    line-height: 1.167;
+    color: #212121;
+  }
 }
 
 .hero {

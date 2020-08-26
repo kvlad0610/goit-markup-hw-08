@@ -5,13 +5,13 @@
 }
 
 .hero-fon {
-  width: 480px;
+  max-width: 767px;
   height: 400px;
   margin-left: auto;
   margin-right: auto;
 
   background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)),
-    url('../images/Header-mobile.jpg');
+    url('../images/header-mobile.jpg');
 
   background-repeat: no-repeat;
   background-size: cover;
@@ -35,18 +35,19 @@
 
 @media screen and (min-device-pixel-ratio: 2),
   screen and (min-resolution: 192dpi),
-  screen and (min-resolution: 2dppx) {
+  screen and (min-resolution: 2dppx),
+  screen and (min-width: 360px) {
   .hero-fon {
     background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)),
-      url('../images/Header-mobile@2x.jpg');
+      url('../images/header-mobile@2x.jpg');
   }
 }
 
 @media screen and (min-width: 768px) {
   .hero-fon {
-    width: 768px;
+    max-width: 1199px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)),
-      url('../images/Header-tablet.jpg');
+      url('../images/header-tablet.jpg');
   }
 }
 
@@ -56,7 +57,7 @@
   screen and (min-width: 768px) {
   .hero-fon {
     background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)),
-      url('../images/Header-tablet@2x.jpg');
+      url('../images/header-tablet@2x.jpg');
   }
 }
 
@@ -67,10 +68,10 @@
   }
 
   .hero-fon {
-    width: 1600px;
+    max-width: 1600px;
     height: 600px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)),
-      url('../images/Header.jpg');
+      url('../images/header.jpg');
   }
 
   .hero-title {
@@ -88,9 +89,21 @@
   screen and (min-width: 1200px) {
   .hero-fon {
     background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)),
-      url('../images/Header@2x.jpg');
+      url('../images/header@2x.jpg');
   }
 }
+
+// @media screen and (max-width: 1199px) {
+//   .hero-fon {
+//     width: 768px;
+//   }
+// }
+
+// @media screen and (max-width: 767px) {
+//   .hero-fon {
+//     width: 480px;
+//   }
+// }
 
 // .hero {
 //   padding-top: 200px;

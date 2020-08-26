@@ -343,6 +343,34 @@ img {
   }
 }
 
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.occupation-section {
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .occupation-section {
+    display: block;
+  }
+}
+
+.section-title {
+  margin-top: 0;
+  margin-bottom: 50px;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  color: #212121;
+}
+
+.hidden {
+  display: none;
+}
+
 .header {
   border-bottom: 1px solid #ececec;
 }

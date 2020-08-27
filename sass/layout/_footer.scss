@@ -1,42 +1,131 @@
-.footer-address-list {
-  @extend %list;
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  background-color: $footer-background-color;
 }
 
 .footer-address-item:not(:last-child) {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
 }
 
 .address-link-map {
-  @extend %link;
   font-style: normal;
   font-weight: normal;
-  color: $primery-white-color;
+
+  color: #ffffff;
 }
 
 .address-link-mail,
 .address-link-tel {
-  @extend %link;
   font-style: normal;
   font-weight: normal;
-  color: $secondary-white-color;
+
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .a-call-subtitle {
   display: block;
   margin-bottom: 20px;
 
-  line-height: 1.14;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 1.143;
   text-transform: uppercase;
-  color: $primery-white-color;
+
+  color: #ffffff;
 }
 
-.footer {
-  background-color: $footer-background-color;
+@media screen and (max-width: 1199px) {
+  .footer {
+    text-align: center;
+  }
 
-  .container-nav {
-    padding-top: 45px;
-    padding-bottom: 28px;
+  .address-call-container {
+    margin-bottom: 60px;
+  }
+
+  .forma-container {
+    width: 450px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .address-container,
+  .a-call-container {
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .address-call-container {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+  }
+
+  .address-container {
+    margin-right: 165px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-container-nav {
+    display: flex;
     align-items: baseline;
     justify-content: space-between;
   }
+
+  .address-container {
+    margin-right: 69px;
+  }
+
+  .footer-address-item:not(:last-child) {
+    margin-bottom: 9px;
+  }
 }
+
+// .footer-address-list {
+//   @extend %list;
+// }
+
+// .footer-address-item:not(:last-child) {
+//   margin-bottom: 9px;
+// }
+
+// .address-link-map {
+//   @extend %link;
+//   font-style: normal;
+//   font-weight: normal;
+//   color: $primery-white-color;
+// }
+
+// .address-link-mail,
+// .address-link-tel {
+//   @extend %link;
+//   font-style: normal;
+//   font-weight: normal;
+//   color: $secondary-white-color;
+// }
+
+// .a-call-subtitle {
+//   display: block;
+//   margin-bottom: 20px;
+
+//   line-height: 1.14;
+//   text-transform: uppercase;
+//   color: $primery-white-color;
+// }
+
+// .footer {
+//   background-color: $footer-background-color;
+
+//   .container-nav {
+//     padding-top: 45px;
+//     padding-bottom: 28px;
+//     align-items: baseline;
+//     justify-content: space-between;
+//   }
+// }

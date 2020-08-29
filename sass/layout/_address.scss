@@ -1,5 +1,4 @@
 .address-list {
-  @extend %list;
   display: flex;
 }
 
@@ -8,8 +7,6 @@
 }
 
 .address-link {
-  @extend %link;
-
   display: inline-flex;
   align-items: center;
 

@@ -300,13 +300,13 @@ img {
   display: block;
 }
 
-.navigation-list, .address-list, .features-list, .occupation-list, .social-list {
+.navigation-list, .social-list {
   padding: 0;
   margin: 0;
   list-style: none;
 }
 
-.navigation-link, .address-link {
+.navigation-link {
   text-decoration: none;
   display: block;
 }
@@ -408,8 +408,8 @@ img {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  min-width: 528px;
-  min-height: 581px;
+  min-width: 450px;
+  min-height: 609px;
   padding: 40px;
   background-color: #ffffff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -422,7 +422,7 @@ img {
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   color: #212121;
 }
@@ -525,6 +525,9 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -559,7 +562,7 @@ img {
 }
 
 .contract {
-  margin-left: 5.5px;
+  margin-left: 3px;
   color: #2196f3;
 }
 
@@ -575,7 +578,7 @@ img {
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
-  line-height: 1.87;
+  line-height: 1.88;
   letter-spacing: 0.06em;
   color: #ffffff;
   background: #2196f3;
@@ -621,6 +624,26 @@ img {
 
 .button-close-svg:hover, .button-close-svg:focus {
   fill: #2196f3;
+}
+
+@media screen and (max-width: 1199px) {
+  .label-agreement {
+    font-size: 12px;
+    line-height: 1.167;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    min-width: 528px;
+    min-height: 581px;
+  }
+  .modal-subtitle {
+    line-height: 1.15;
+  }
+  .contract {
+    margin-left: 5.5px;
+  }
 }
 
 .header {

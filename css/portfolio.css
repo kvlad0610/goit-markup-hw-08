@@ -300,13 +300,13 @@ img {
   display: block;
 }
 
-.navigation-list, .address-list, .social-list {
+.navigation-list, .social-list {
   padding: 0;
   margin: 0;
   list-style: none;
 }
 
-.navigation-link, .address-link {
+.navigation-link {
   text-decoration: none;
   display: block;
 }
@@ -820,7 +820,7 @@ img {
 }
 
 .working-item {
-  width: 450px;
+  max-width: 450px;
   background: #ffffff;
   -webkit-transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -850,8 +850,8 @@ img {
   line-height: 1.55;
   color: #ffffff;
   background-color: rgba(33, 150, 243, 0.9);
-  -webkit-transform: translateY(100%);
-          transform: translateY(100%);
+  -webkit-transform: translateY(101%);
+          transform: translateY(101%);
   -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);

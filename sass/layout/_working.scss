@@ -1,5 +1,5 @@
 .working-item {
-  width: 450px;
+  max-width: 450px;
   background: $primery-white-color;
 
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -29,7 +29,7 @@
   color: $primery-white-color;
   background-color: rgba(33, 150, 243, 0.9);
 
-  transform: translateY(100%);
+  transform: translateY(101%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   .working-item:hover &,

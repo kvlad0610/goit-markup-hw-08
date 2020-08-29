@@ -995,7 +995,7 @@ img {
 }
 
 .features-item {
-  width: 450px;
+  max-width: 450px;
 }
 
 .features-container-img {
@@ -1119,7 +1119,7 @@ img {
 }
 
 .team-item {
-  width: 450px;
+  max-width: 450px;
   text-align: center;
   padding-bottom: 24px;
   background: #ffffff;
@@ -1374,7 +1374,7 @@ img {
     margin-bottom: 60px;
   }
   .forma-container {
-    width: 450px;
+    max-width: 450px;
     margin-right: auto;
     margin-left: auto;
   }
